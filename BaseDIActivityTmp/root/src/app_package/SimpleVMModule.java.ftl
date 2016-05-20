@@ -1,9 +1,9 @@
 package ${packageName}.vm.module;
 
+import com.istuary.ironhide.lib.di.scope.PerActivity;
 import ${packageName}.contract.${pageName}Contract;
 import ${packageName}.presenter.${pageName}P;
 import ${packageName}.vm.${pageName}VM;
-import com.inscontrol.lib.di.scope.PerActivity;
 
 import dagger.Module;
 import dagger.Provides;

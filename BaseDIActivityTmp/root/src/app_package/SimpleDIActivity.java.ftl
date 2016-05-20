@@ -2,13 +2,13 @@ package ${packageName};
 
 import android.os.Bundle;
 
-
+import ${realAppPackage}.databinding.${underscoreToCamelCase(layoutName)}Binding;
 import ${packageName}.contract.Dagger${pageName}Contract_Comp;
 import ${packageName}.vm.${pageName}VM;
 import ${packageName}.vm.module.${pageName}VMModule;
 import ${packageName}.contract.${pageName}Contract;
-import com.inscontrol.lib.view.base.page.BaseDIActivity;
-import com.inscontrol.lib.view.base.view.ILifeCycle;
+import com.istuary.ironhide.lib.view.base.page.BaseDIActivity;
+import com.istuary.ironhide.lib.view.base.view.ILifeCycle;
 import javax.inject.Inject;
 
 <#if hasAppBar>
@@ -20,7 +20,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 </#if>
 <#if applicationPackage??>
-import ${applicationPackage}.R;
+import ${realAppPackage}.R;
 </#if>
 
 public class ${activityClass} extends BaseDIActivity implements ${pageName}Contract.View{
@@ -30,7 +30,8 @@ public class ${activityClass} extends BaseDIActivity implements ${pageName}Contr
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bindLayout(R.layout.${layoutName});
+        ${underscoreToCamelCase(layoutName)}Binding binding = bindLayout(R.layout.${layoutName});
+        binding.setViewModel(viewModel);
     }
 
 <#if isNewProject>

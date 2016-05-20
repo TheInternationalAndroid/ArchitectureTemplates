@@ -1,9 +1,9 @@
 package ${packageName}.contract;
 
-import com.inscontrol.lib.di.scope.PerActivity;
-import com.inscontrol.lib.view.base.comp.ActivityComp;
-import com.inscontrol.lib.view.base.presenter.IPresenter;
-import com.inscontrol.lib.view.base.view.IView;
+import com.istuary.ironhide.lib.di.scope.PerActivity;
+import com.istuary.ironhide.lib.view.base.comp.ActivityComp;
+import com.istuary.ironhide.lib.view.base.presenter.IPresenter;
+import com.istuary.ironhide.lib.view.base.view.IView;
 import ${packageName}.vm.module.${pageName}VMModule;
 import ${packageName}.${activityClass};
 

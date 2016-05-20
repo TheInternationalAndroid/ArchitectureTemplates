@@ -5,5 +5,6 @@
     <global id="appBarLayoutName" value="${layoutName}" />
     <global id="fragmentClass" value="${activityClass}Fragment" />
     <global id="moduleNameUncapFirst" type="string" value="${pageName?uncap_first}VMModule"/>
+    <global id="realAppPackage" type="string" value="${applicationPackage?replace('.debug','')}"/>
 
 </globals>

@@ -1,7 +1,7 @@
 package ${packageName}.vm;
 
+import com.istuary.ironhide.lib.viewmodel.BaseVM;
 import ${packageName}.contract.${pageName}Contract;
-import com.inscontrol.lib.viewmodel.BaseVM;
 
 public class ${pageName}VM extends BaseVM<${pageName}Contract.Presenter, ${pageName}Contract.View>{
 

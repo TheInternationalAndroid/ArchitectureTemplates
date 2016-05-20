@@ -1,7 +1,7 @@
 package ${packageName}.presenter;
 
+import com.istuary.ironhide.lib.view.base.presenter.BasePresenter;
 import ${packageName}.contract.${pageName}Contract;
-import com.inscontrol.lib.view.base.presenter.BasePresenter;
 import com.squareup.leakcanary.RefWatcher;
 
 import javax.inject.Inject;
